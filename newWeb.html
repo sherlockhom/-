@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>粘土砖-特级320订单跟踪</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<script src="//cdn.staticfile.org/jquery/1.10.2/jquery.min.js">
+		</script>
+	</head>
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		.header {
+			height: 3rem;
+			padding: 0.5rem;
+			background-image: linear-gradient(0deg, #0b92e8 0%, #0bb7ef 100%);
+			font-size: 1.2rem;
+			font-weight: bold;
+			color: #FFFFFF;
+			text-align: center;
+		}
+
+		.orderHeader,
+		.progressHeader {
+			height: 1.5rem;
+			background-color: #F1F1F1;
+			margin: 0.5rem 0 0.5rem 0;
+		}
+
+		.orderTtile,
+		.progressTtile {
+			float: left;
+			padding-left: 1rem;
+			font-size: 1rem;
+			font-weight: bold;
+			overflow: hidden;
+		}
+
+		.open,
+		.close {
+			float: right;
+			padding-right: 1rem;
+		}
+
+		.hidden {
+			display: none;
+		}
+
+		.orderContent {
+			color: #666666;
+		}
+
+		.orderDetail {
+			display: block;
+			margin: 0.3rem;
+		}
+
+		.lable {
+			margin: 0 0.5rem 0 0.5rem;
+		}
+
+		.progressDetail {
+			margin: 1rem;
+			/* height: 4rem; */
+		}
+
+		.progressImage {
+			float: left;
+			width: 2rem;
+			height: 5rem;
+		}
+
+		.progressImage img {
+			height: 1.2rem;
+			width: 1.2rem;
+		}
+
+		.detailInfo {
+			padding-bottom: 0.5rem;
+			border-bottom: 1px solid #f5f5f5;
+		}
+
+		.detailContent {
+			color: #666666;
+		}
+	</style>
+	<body>
+		<div class="wrapper">
+			<div class="header">
+				<div class="headerInfo1">
+					郑州中本耐火科技股份有限公司
+				</div>
+				<div class="headerInfo2">
+					客户订单跟踪
+				</div>
+			</div>
+			<div class="content">
+				<div class="orderInfo">
+					<div class="orderHeader">
+						<span class="orderTtile">订单信息</span>
+						<span class="open">更多⬇</span>
+						<span class="close hidden">收起⬆</span>
+					</div>
+					<div class="orderContent">
+						<div class="orderDetail">
+							<lable class="lable">客户名称:</lable>
+							<span class="customerName">豫耐实业集团有限责任公司</span>
+						</div>
+						<div class="orderDetail">
+							<lable class="lable">订单名称:</lable>
+							<span class="orderName">粘土320</span>
+						</div>
+						<div class="orderDetail">
+							<lable class="lable">订单时间:</lable>
+							<span class="orderTime">2021-01-12 16:23:00</span>
+						</div>
+						<div class="orderDetail">
+							<lable class="lable">合同名称:</lable>
+							<span class="contractName">南钢集团-2021</span>
+						</div>
+						<div class="orderDetail">
+							<lable class="lable">转&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;型:</lable>
+							<span class="blockType">粘土砖-特级320</span>
+						</div>
+					</div>
+				</div>
+				<div class="progressInfo">
+					<div class="progressHeader">
+						<span class="progressTtile">生产进展</span>
+					</div>
+					<div class="progressContent">
+						<div class="progressDetail">
+							<div class="progressImage">
+								<img src="http://xm.njjzgk.com/html/order/img/now.png">
+							</div>
+							<div class="detailInfo">
+								<span class="detailTitle">开始打包入库</span>
+								<div class="detailContent">
+									<lable>完成数量:</lable>
+									<span class="finishNum">1059</span>
+								</div>
+								<div class="detailContent">
+									<lable>更新时间:</lable>
+									<span class="updateTime">2021-01-12 16:25:24</span>
+								</div>
+							</div>
+						</div>
+						<div class="progressDetail">
+							<div class="progressImage">
+								<img src="http://xm.njjzgk.com/html/order/img/next.png">
+							</div>
+							<div class="detailInfo">
+								<span class="detailTitle">开始烧制</span>
+								<div class="detailContent">
+									<lable>完成数量(块):</lable>
+									<span class="finishNum">200</span>
+								</div>
+								<div class="detailContent">
+									<lable>更新时间:</lable>
+									<span class="updateTime">2021-01-12 16:24:58</span>
+								</div>
+							</div>
+						</div>
+						<div class="progressDetail">
+							<div class="progressImage">
+								<img src="http://xm.njjzgk.com/html/order/img/next.png">
+							</div>
+							<div class="detailInfo">
+								<span class="detailTitle">开始装窑</span>
+								<div class="detailContent">
+									<lable>完成数量(块):</lable>
+									<span class="finishNum">286</span>
+								</div>
+								<div class="detailContent">
+									<lable>更新时间:</lable>
+									<span class="updateTime">2021-01-12 16:24:39</span>
+								</div>
+							</div>
+						</div>
+						<div class="progressDetail">
+							<div class="progressImage">
+								<img src="http://xm.njjzgk.com/html/order/img/next.png">
+							</div>
+							<div class="detailInfo">
+								<span class="detailTitle">开始加工半成品</span>
+								<div class="detailContent">
+									<lable>完成数量(块):</lable>
+									<span class="finishNum">159</span>
+								</div>
+								<div class="detailContent">
+									<lable>更新时间:</lable>
+									<span class="updateTime">2021-01-12 16:24:19</span>
+								</div>
+							</div>
+						</div>
+						<div class="progressDetail">
+							<div class="progressImage">
+								<img src="http://xm.njjzgk.com/html/order/img/next.png">
+							</div>
+							<div class="detailInfo">
+								<span class="detailTitle">已排产</span>
+								<div class="detailContent">
+									<lable>预计生产时间:</lable>
+									<span class="produceTime">2021-01-12</span>
+								</div>
+								<div class="detailContent">
+									<lable>预计完成时间:</lable>
+									<span class="finishTime">2021-01-19</span>
+								</div>
+								<div class="detailContent">
+									<lable>更新时间:</lable>
+									<span class="updateTime">2021-01-12 16:23:15</span>
+								</div>
+
+							</div>
+						</div>
+						<div class="progressDetail">
+							<div class="progressImage">
+								<img src="http://xm.njjzgk.com/html/order/img/next.png">
+							</div>
+							<div class="detailInfo">
+								<span class="detailTitle">已下单</span>
+								<div class="detailContent">
+									<lable>数量:</lable>
+									<span class="num">5000</span>
+								</div>
+								<div class="detailContent">
+									<lable>重量:</lable>
+									<span class="weight"></span>
+								</div>
+								<div class="detailContent">
+									<lable>更新时间:</lable>
+									<span class="updateTime">2021-01-12 16:23:00</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script>
+		$(".open").click(function() {
+			var txt =
+				"<div class=\"more\"><div class=\"orderDetail\"><lable class=\"lable\">数&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;量:</lable><span class=\"totalNum\">5000</span></div><div class=\"orderDetail\"><lable class=\"lable\">重&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;量:</lable><span class=\"totalNum\"></span></div><div class=\"orderDetail\"><lable class=\"lable\">预计生产时间:</lable><span class=\"totalNum\">2021-01-12</span></div><div class=\"orderDetail\"><lable class=\"lable\">预计完成时间:</lable><span class=\"totalNum\">2021-01-19</span></div></div>"
+			$(".orderDetail:last").after(txt);
+			$(".close").removeClass("hidden");
+			$(".open").addClass("hidden");
+		})
+
+		$(".close").click(function() {
+			$(".more").remove();
+			$(".close").addClass("hidden");
+			$(".open").removeClass("hidden");
+		})
+	</script>
+</html>
